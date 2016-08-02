@@ -11,32 +11,75 @@ public class CourseInfoGeneralArrayListTestDataSource implements CourseInfoGener
 
 	public CourseInfoGeneralArrayListTestDataSource() {
 		super();
-		initializeVehicleArrayList();
+		initializeCourseArrayList();
 	}
 
-	private void initializeVehicleArrayList() {
-	
-				
-		courses.add(new CourseInfoGeneral("Learning Java", "Kevin Trainor", "Summer", 2016, "LIS", 452, "1",
-				"University of Illinois", "Online", "100% Online", false, "", false, "", false, "", false, "", false,
-				"", false, true, false, false, 4.0, 4.0, 4.0, "5/1/2016", "8/2/2016", 3, 3, 3, "Jana Diesner", "",
-				"Java programming", "Logical Thinking"));
-		courses.add(new CourseInfoGeneral("Learning Java", "Kevin Trainor", "Summer", 2016, "LIS", 452, "1",
-				"University of Illinois", "Online", "100% Online", false, "", false, "", false, "", false, "", false,
-				"", false, true, false, false, 3.0, 3.0, 3.0, "5/1/2016", "8/2/2016", 4, 4, 4, "Jana Diesner", "",
-				"Java programming", "Logical Thinking"));
-		courses.add(new CourseInfoGeneral("Learning Java", "Kevin Trainor", "Summer", 2016, "LIS", 452, "1",
-				"University of Illinois", "Online", "100% Online", false, "", false, "", false, "", false, "", false,
-				"", true, false, false, true , 1.0, 4.0, null, "5/1/2016", "8/2/2016", 6, 6, 6, "Jana Diesner", "",
-				"Java programming", "Logical Thinking"));
-		courses.add(new CourseInfoGeneral("Learning Java", "Kevin Trainor", "Summer", 2016, "LIS", 452, "1",
-				"University of Illinois", "Online", "100% Online", false, "", false, "", false, "", false, "", false,
-				"", false, true, false, false, 4.0, 4.0, 4.0, "5/1/2016", "8/2/2016", 6, 6, 6, "Jana Diesner", "",
-				"Java programming", "Logical Thinking"));
-		courses.add(new CourseInfoGeneral("Learning Java", "Kevin Trainor", "Summer", 2016, "LIS", 452, "1",
-				"University of Illinois", "Online", "100% Online", false, "", false, "", false, "", false, "", false,
-				"", false, false, true, false, 3.5, 3.5, null, "5/1/2016", "8/2/2016", 6, 6, 6, "Jana Diesner", "",
-				"Java programming", "Logical Thinking"));
+	private void initializeCourseArrayList() {
+			
+		
+		
+			//Testing for Credits, GPA, and enrollment status	
+		
+		courses.add(new CourseInfoGeneral(
+				"Learning Java", "Dr. Kevin Trainor", 
+				"Spring", 2016,	"LIS", 452, "1A", "University of Illinois", "Online", "100% Online", 
+				false, null, true, 1, true, 2, false, null, false, null, false, null, false, null, false, null, false, 
+				null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null,
+				false, null,  false, null, false, null, false, 
+				//Enrollment Status
+				false, false, true, 
+				//Credits and GPA
+				4.0, 4.0, null,
+				//remaining items
+				"05/05/2016", "08/21/2016", 3, 3, 3, "Jana Diesner", "", "Programming Skills", "Logic,"));
+		courses.add(new CourseInfoGeneral(
+				"Learning Java", "Dr. Kevin Trainor", 
+				"Spring", 2016,	"LIS", 452, "1A", "University of Illinois", "Online", "100% Online", 
+				false, null, true, 1, true, 2, false, null, false, null, false, null, false, null, false, null, false, 
+				null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null,
+				false, null,  false, null, false, null, false, 
+				//Enrollment Status
+				false, true, false, 
+				//Credits and GPA
+				3.0, 3.0, null,
+				//remaining items
+				"05/05/2016", "08/21/2016", 3, 3, 3, "Jana Diesner", "", "Programming Skills", "Logic,"));
+		courses.add(new CourseInfoGeneral(
+				"Learning Java", "Dr. Kevin Trainor", 
+				"Spring", 2016,	"LIS", 452, "1A", "University of Illinois", "Online", "100% Online", 
+				false, null, true, 1, true, 2, false, null, false, null, false, null, false, null, false, null, false, 
+				null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null,
+				false, null,  false, null, false, null, false, 
+				//Enrollment Status
+				false, true, false, 
+				//Credits and GPA
+				1.0, 1.0, null,
+				//remaining items
+				"05/05/2016", "08/21/2016", 3, 3, 3, "Jana Diesner", "", "Programming Skills", "Logic,"));
+		courses.add(new CourseInfoGeneral(
+				"Learning Java", "Dr. Kevin Trainor", 
+				"Spring", 2016,	"LIS", 452, "1A", "University of Illinois", "Online", "100% Online", 
+				false, null, true, 1, true, 2, false, null, false, null, false, null, false, null, false, null, false, 
+				null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null,
+				false, null,  false, null, false, null, false, 
+				//Enrollment Status
+				true, false, false, 
+				//Credits and GPA
+				4.0, 4.0, 4.0,
+				//remaining items
+				"05/05/2016", "08/21/2016", 3, 3, 3, "Jana Diesner", "", "Programming Skills", "Logic,"));
+		courses.add(new CourseInfoGeneral(
+				"Learning Java", "Dr. Kevin Trainor", 
+				"Spring", 2016,	"LIS", 452, "1A", "University of Illinois", "Online", "100% Online", 
+				false, null, true, 1, true, 2, false, null, false, null, false, null, false, null, false, null, false, 
+				null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null, false, null,
+				false, null,  false, null, false, null, false, 
+				//Enrollment Status
+				true, false, false, 
+				//Credits and GPA
+				4.0, 2.0, 2.0,
+				//remaining items
+				"05/05/2016", "08/21/2016", 3, 3, 3, "Jana Diesner", "", "Programming Skills", "Logic,"));
 		
 
 		

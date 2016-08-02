@@ -72,137 +72,110 @@ public class CourseInfoGeneral {
 	private String professionalSkills;
 	private String academicSkills;
 
-	
-	
-	
-	
 	// no argument constructor
 	public CourseInfoGeneral() {
-
+		
 	}
-
-	//to string
+	
+	// to string
 	@Override
 	public String toString() {
-		return "CourseInfoGeneral [title=" + title + ", instructor=" + instructor + ", semester=" + semester + ", year="
-				+ year + ", departmentCode=" + departmentCode + ", courseNumber=" + courseNumber + ", sectionNumber="
-				+ sectionNumber + ", institution=" + institution + ", location=" + location + ", online=" + online
-				+ ", generalRequirement=" + generalRequirement + ", generalCategory=" + generalCategory
-				+ ", firstMajorRequirement=" + firstMajorRequirement + ", firstMajorCategory=" + firstMajorCategory
-				+ ", secondMajorRequirement=" + secondMajorRequirement + ", secondMajorCategory=" + secondMajorCategory
-				+ ", firstMinorRequirement=" + firstMinorRequirement + ", firstMinorCategory=" + firstMinorCategory
-				+ ", secondMinorRequirement=" + secondMinorRequirement + ", secondMinorCategory=" + secondMinorCategory
-				+ ", freeElective=" + freeElective + ", completed=" + completed + ", consideringEnrollment="
-				+ consideringEnrollment + ", currentEnrollment=" + currentEnrollment + ", credits=" + credits
-				+ ", gpaDesired=" + gpaDesired + ", gpaEarned=" + gpaEarned + ", courseStartDate=" + courseStartDate
-				+ ", courseEndDate=" + courseEndDate + ", coursePredictedDifficulty=" + coursePredictedDifficulty
-				+ ", coursePredictedWorkload=" + coursePredictedWorkload + ", predictedEnjoyability="
-				+ predictedEnjoyability + ", recommendedByWho=" + recommendedByWho + ", notRecommendedByWho="
-				+ notRecommendedByWho + ", professionalSkills=" + professionalSkills + ", academicSkills="
-				+ academicSkills + "]";
+		return "CourseInfoGeneral [title=Learning Java, instructor=Dr. Kevin Trainor, semester=Fall, year=2016, departmentCode=LIS, courseNumber=452, sectionNumber=1, institution=University of Illinois, location=Online, online=100% Online, generalRequirement=true, generalCategory=1, firstMajorRequirement=true, firstMajorCategory=1, secondMajorRequirement=true, secondMajorCategory=1, firstMinorRequirement=true, firstMinorCategory=1, secondMinorRequirement=true, secondMinorCategory=1, freeElective=true, completed=true, consideringEnrollment=false, currentEnrollment=false, credits=4.0, gpaDesired=4.0, gpaEarned=4.0, courseStartDate=05/21/2016, courseEndDate=08/02/2016, coursePredictedDifficulty=3, coursePredictedWorkload=3, predictedEnjoyability=3, recommendedByWho=Jana Diesner, notRecommendedByWho=Nobody, professionalSkills=Programming Skills, academicSkills=Logic Based Learning]";
 	}
 
 	// constructors
-	public CourseInfoGeneral(String expectedTitle, String expectedInstructor, String expectedSemester, Integer expectedYear,
-			String expectedDepartmentCode, Integer expectedCourseNumber, String expectedSectionNumber,
-			String expectedInstitution, String expectedLocation, String expectedOnline,
-			boolean expectedGeneralRequirement, Integer expectedGeneralCategory, 
-			boolean expectedFirstMajorRequirement, Integer expectedFirstMajorCategory, 
-			boolean expectedSecondMajorRequirement, Integer expectedSecondMajorCategory,
-			boolean expectedThirdMajorRequirement, 	Integer expectedThirdMajorCategory, 
-			boolean expectedFourthMajorRequirement, Integer expectedFourthMajorCategory,
-			boolean expectedFifthMajorRequirement, Integer expectedFifthMajorCategory, 
-			boolean expectedSixthMajorRequirement, Integer expectedSixthMajorCategory, 
-			boolean expectedSeventhMajorRequirement, Integer expectedSeventhMajorCategory,
-			boolean expectedEigthMajorRequirement, Integer expectedEigthMajorCategory,
-			boolean expectedNinthMajorRequirement, 	Integer expectedNinthMajorCategory,
-			boolean expectedTenthMajorRequirement, 	Integer expectedTenthMajorCategory,
-			boolean expectedFirstMinorRequirement, Integer expectedFirstMinorCategory,
-			boolean expectedSecondMinorRequirement, Integer expectedSecondMinorCategory,
-			boolean expectedThirdMinorRequirement, Integer expectedThirdMinorCategory,
-			boolean expectedFourthMinorRequirement, Integer expectedFourthMinorCategory,
-			boolean expectedFifthMinorRequirement, Integer expectedFifthMinorCategory,
-			boolean expectedSixthMinorRequirement, Integer expectedSixthMinorCategory,
-			boolean expectedSeventhMinorRequirement, Integer expectedSeventhMinorCategory,
-			boolean expectedEighthMinorRequirement, Integer expectedEighthMinorCategory,
-			boolean expectedNinthMinorRequirement, Integer expectedNinthMinorCategory,
-			boolean expectedTenthMinorRequirement, Integer expectedTenthMinorCategory,
-			boolean expectedFreeElective, boolean expectedCompleted,
-			boolean expectedConsideringEnrollment, boolean expectedCurrentEnrollment, Double expectedCredits,
-			Double expectedGpaDesired, Double expectedGpaEarned, String expectedCourseStartDate,
-			String expectedCourseEndDate, Integer expectedCoursePredictedDifficulty, Integer expectedCoursePredictedWorkload,
-			Integer expectedPredictedEnjoyability, String expectedRecommendedByWho, String expectedNotRecommendedByWho,
-			String expectedProfessionalSkills, String expectedAcademicSkills) {
+	public CourseInfoGeneral(String title, String instructor, String semester, Integer year, String departmentCode,
+			Integer courseNumber, String sectionNumber, String institution, String location, String online,
+			boolean generalRequirement, Integer generalCategory, boolean firstMajorRequirement,
+			Integer firstMajorCategory, boolean secondMajorRequirement, Integer secondMajorCategory,
+			boolean thirdMajorRequirement, Integer thirdMajorCategory, boolean fourthMajorRequirement,
+			Integer fourthMajorCategory, boolean fifthMajorRequirement, Integer fifthMajorCategory,
+			boolean sixthMajorRequirement, Integer sixthMajorCategory, boolean seventhMajorRequirement,
+			Integer seventhMajorCategory, boolean eighthMajorRequirement, Integer eigthMajorCategory,
+			boolean ninthMajorRequirement, Integer ninthMajorCategory, boolean tenthMajorRequirement,
+			Integer tenthMajorCategory, boolean firstMinorRequirement, Integer firstMinorCategory,
+			boolean secondMinorRequirement, Integer secondMinorCategory, boolean thirdMinorRequirement,
+			Integer thirdMinorCategory, boolean fourthMinorRequirement, Integer fourthMinorCategory,
+			boolean fifthMinorRequirement, Integer fifthMinorCategory, boolean sixthMinorRequirement,
+			Integer sixthMinorCategory, boolean seventhMinorRequirement, Integer seventhMinorCategory,
+			boolean eighthMinorRequirement, Integer eighthMinorCategory, boolean ninthMinorRequirement,
+			Integer ninthMinorCategory, boolean tenthMinorRequirement, Integer tenthMinorCategory, boolean freeElective,
+			boolean completed, boolean consideringEnrollment, boolean currentEnrollment, Double credits,
+			Double gpaDesired, Double gpaEarned, String courseStartDate, String courseEndDate,
+			Integer coursePredictedDifficulty, Integer coursePredictedWorkload, Integer predictedEnjoyability,
+			String recommendedByWho, String notRecommendedByWho, String professionalSkills, String academicSkills) {
 
-	// fully overloaded constructor
-		setTitle(expectedTitle);
-		setInstructor(expectedInstructor);
-		setSemester(expectedSemester);
-		setYear(expectedYear);
-		setDepartmentCode(expectedDepartmentCode);
-		setCourseNumber(expectedCourseNumber);
-		setSectionNumber(expectedSectionNumber);
-		setInstitution(expectedInstitution);
-		setLocation(expectedLocation);
-		setOnline(expectedOnline);
-		setGeneralRequirement(expectedGeneralRequirement);
-		setGeneralCategory(expectedGeneralCategory);
-		setFirstMajorRequirement(expectedFirstMajorRequirement);
-		setFirstMajorCategory(expectedFirstMajorCategory);
-		setSecondMajorRequirement(expectedSecondMajorRequirement);
-		setSecondMajorCategory(expectedSecondMajorCategory);
-		setThirdMajorCategory(expectedThirdMajorCategory);
-		setThirdMajorRequirement(expectedThirdMajorRequirement);
-		setFourthMajorCategory(expectedFourthMajorCategory);
-		setFourthMajorRequirement(expectedFourthMajorRequirement);
-		setFifthMajorCategory(expectedFifthMajorCategory);
-		setFifthMajorRequirement(expectedFifthMajorRequirement);
-		setSixthMajorCategory(expectedSixthMajorCategory);
-		setSixthMajorRequirement(expectedSixthMajorRequirement);
-		setSeventhMajorCategory(expectedSeventhMajorCategory);
-		setEighthMajorRequirement(expectedSeventhMajorRequirement);
-		setEighthMajorCategory(expectedEigthMajorCategory);
-		setNinthMajorRequirement(expectedNinthMajorRequirement);
-		setNinthMajorCategory(expectedNinthMajorCategory);
-		setTenthMajorRequirement(expectedTenthMajorRequirement);
-		setTenthMajorCategory(expectedTenthMajorCategory);
-		setFirstMinorRequirement(expectedFirstMinorRequirement);
-		setFirstMinorCategory(expectedFirstMinorCategory);
-		setSecondMinorRequirement(expectedSecondMinorRequirement);
-		setSecondMinorCategory(expectedSecondMinorCategory);
-		setThirdMinorRequirement(expectedThirdMinorRequirement);
-		setThirdMinorCategory(expectedThirdMinorCategory);
-		setFourthMinorRequirement(expectedFourthMinorRequirement);
-		setFourthMinorCategory(expectedFourthMinorCategory);
-		setFifthMinorRequirement(expectedFifthMinorRequirement);
-		setFifthMinorCategory(expectedFifthMinorCategory);
-		setSixthMinorRequirement(expectedSixthMinorRequirement);
-		setSixthMinorCategory(expectedSixthMinorCategory);
-		setSeventhMinorRequirement(expectedSeventhMinorRequirement);
-		setSeventhMinorCategory(expectedSeventhMinorCategory);
-		setEighthMinorRequirement(expectedEighthMinorRequirement);
-		setEighthMinorCategory(expectedEighthMinorCategory);
-		setNinthMinorRequirement(expectedNinthMinorRequirement);
-		setNinthMinorCategory(expectedNinthMinorCategory);
-		setTenthMinorRequirement(expectedTenthMinorRequirement);
-		setTenthMinorCategory(expectedTenthMinorCategory);
-		setFreeElective(expectedFreeElective);
-		setCompleted(expectedCompleted);
-		setConsideringEnrollment(expectedConsideringEnrollment);
-		setCurrentEnrollment(expectedCurrentEnrollment);
-		setCredits(expectedCredits);
-		setGpaDesired(expectedGpaDesired);
-		setGpaEarned(expectedGpaEarned);
-		setCourseStartDate(expectedCourseStartDate);
-		setCourseEndDate(expectedCourseEndDate);
-		setCoursePredictedDifficulty(expectedCoursePredictedDifficulty);
-		setCoursePredictedWorkload(expectedCoursePredictedWorkload);
-		setPredictedEnjoyability(expectedPredictedEnjoyability);
-		setRecommendedByWho(expectedRecommendedByWho);
-		setNotRecommendedByWho(expectedNotRecommendedByWho);
-		setProfessionalSkills(expectedProfessionalSkills);
-		setAcademicSkills(expectedAcademicSkills);
-	
+		// fully overloaded constructor
+		setTitle(title);
+		setInstructor(instructor);
+		setSemester(semester);
+		setYear(year);
+		setDepartmentCode(departmentCode);
+		setCourseNumber(courseNumber);
+		setSectionNumber(sectionNumber);
+		setInstitution(institution);
+		setLocation(location);
+		setOnline(online);
+		setGeneralRequirement(generalRequirement);
+		setGeneralCategory(generalCategory);
+		setFirstMajorRequirement(firstMajorRequirement);
+		setFirstMajorCategory(firstMajorCategory);
+		setSecondMajorRequirement(secondMajorRequirement);
+		setSecondMajorCategory(secondMajorCategory);
+		setThirdMajorCategory(thirdMajorCategory);
+		setThirdMajorRequirement(thirdMajorRequirement);
+		setFourthMajorCategory(fourthMajorCategory);
+		setFourthMajorRequirement(fourthMajorRequirement);
+		setFifthMajorCategory(fifthMajorCategory);
+		setFifthMajorRequirement(fifthMajorRequirement);
+		setSixthMajorCategory(sixthMajorCategory);
+		setSixthMajorRequirement(sixthMajorRequirement);
+		setSeventhMajorRequirement(seventhMajorRequirement);
+		setSeventhMajorCategory(seventhMajorCategory);
+		setEighthMajorRequirement(eighthMajorRequirement);
+		setEighthMajorCategory(eigthMajorCategory);
+		setNinthMajorRequirement(ninthMajorRequirement);
+		setNinthMajorCategory(ninthMajorCategory);
+		setTenthMajorRequirement(tenthMajorRequirement);
+		setTenthMajorCategory(tenthMajorCategory);
+		setFirstMinorRequirement(firstMinorRequirement);
+		setFirstMinorCategory(firstMinorCategory);
+		setSecondMinorRequirement(secondMinorRequirement);
+		setSecondMinorCategory(secondMinorCategory);
+		setThirdMinorRequirement(thirdMinorRequirement);
+		setThirdMinorCategory(thirdMinorCategory);
+		setFourthMinorRequirement(fourthMinorRequirement);
+		setFourthMinorCategory(fourthMinorCategory);
+		setFifthMinorRequirement(fifthMinorRequirement);
+		setFifthMinorCategory(fifthMinorCategory);
+		setSixthMinorRequirement(sixthMinorRequirement);
+		setSixthMinorCategory(sixthMinorCategory);
+		setSeventhMinorRequirement(seventhMinorRequirement);
+		setSeventhMinorCategory(seventhMinorCategory);
+		setEighthMinorRequirement(eighthMinorRequirement);
+		setEighthMinorCategory(eighthMinorCategory);
+		setNinthMinorRequirement(ninthMinorRequirement);
+		setNinthMinorCategory(ninthMinorCategory);
+		setTenthMinorRequirement(tenthMinorRequirement);
+		setTenthMinorCategory(tenthMinorCategory);
+		setFreeElective(freeElective);
+		setCompleted(completed);
+		setConsideringEnrollment(consideringEnrollment);
+		setCurrentEnrollment(currentEnrollment);
+		setCredits(credits);
+		setGpaDesired(gpaDesired);
+		setGpaEarned(gpaEarned);
+		setCourseStartDate(courseStartDate);
+		setCourseEndDate(courseEndDate);
+		setCoursePredictedDifficulty(coursePredictedDifficulty);
+		setCoursePredictedWorkload(coursePredictedWorkload);
+		setPredictedEnjoyability(predictedEnjoyability);
+		setRecommendedByWho(recommendedByWho);
+		setNotRecommendedByWho(notRecommendedByWho);
+		setProfessionalSkills(professionalSkills);
+		setAcademicSkills(academicSkills);
+
+		// getters and setters
 	}
 
 	public String getTitle() {
@@ -824,6 +797,8 @@ public class CourseInfoGeneral {
 		return result;
 	}
 
+	// hash code
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -1100,9 +1075,6 @@ public class CourseInfoGeneral {
 			return false;
 		return true;
 	}
-
-// hash code
-	
-	
 	
 }
+	

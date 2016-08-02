@@ -20,6 +20,9 @@ public class CourseGeneralInfoClient {
 		Double averagePredictedGpa = (double) 0;
 		Double predictedQualityPoints = (double) 0;
 		
+	
+		
+		
 		DecimalFormat df = new DecimalFormat("0.0000");
 		
 		CourseInfoGeneral currentCourse;
@@ -27,10 +30,11 @@ public class CourseGeneralInfoClient {
 		currentCourse = source.getNextCourseInfoGeneral();
 		
 		// to string print
+		
 		while (currentCourse != null) {
 			System.out.println(currentCourse.toString());
 		
-		// total credits - expected 11
+		// total credits - expected 8
 		// potential credits - expected 12
 	    // planned credits - expected 16
 			boolean completed = currentCourse.isCompleted();
@@ -55,7 +59,7 @@ public class CourseGeneralInfoClient {
 			}
 		
 			
-		 //currentGPA - expected 3.7273    
+		 //currentGPA - expected 3.0    
 			completed = currentCourse.isCompleted();
 				Double tempCredits;
 			    Double tempGpa;
@@ -66,26 +70,26 @@ public class CourseGeneralInfoClient {
 			    		tempCredits = currentCourse.getCredits();
 			        	tempQualityPoints = (tempCredits * tempGpa);
 			        	qualityPoints += tempQualityPoints;
-			        	}
-			       }
-	
+			    	}
+			    }
+				
 			
-	   //Desired GPA - expected 3.75
+	   //Desired GPA - expected 3.33
 			 
 			boolean currentEnrollment2 = currentCourse.isCurrentEnrollment();
 					if (currentEnrollment2 == true) {
 						Double tempDesiredGpa;
 						Double tempDesiredQualityPoints;
-			 			Double tempCredits2 = currentCourse.getCredits();
+			 			Double tempCredits1 = currentCourse.getCredits();
 			 			tempDesiredGpa = currentCourse.getGpaDesired();
 			 			if (tempDesiredGpa != null) {
 			 				tempDesiredGpa = currentCourse.getGpaDesired();
-			 				tempDesiredQualityPoints = (tempCredits2 * tempDesiredGpa);
+			 				tempDesiredQualityPoints = (tempCredits1 * tempDesiredGpa);
 			 				desiredQualityPoints += tempDesiredQualityPoints;
 			 			}	
 					}
 					
-		 //Planned GPA - expected 3.6935
+		 //Planned GPA - expected 3.125
 				boolean consideringEnrollment = currentCourse.isConsideringEnrollment();
 					if (consideringEnrollment == true) {
 						Double tempPredictedGpa;
@@ -96,19 +100,19 @@ public class CourseGeneralInfoClient {
 			 				tempPredictedQualityPoints = (tempCredits3 * tempPredictedGpa);
 			 				predictedQualityPoints += tempPredictedQualityPoints;
 						}
+					 		
 					}	
 							
-			currentCourse = source.getNextCourseInfoGeneral();
-		
-			}
-		
+					currentCourse = source.getNextCourseInfoGeneral();
+		}
+			
 		potentialCredits += totalCredits;
 		predictedCredits += potentialCredits;
 		averageGpa = (qualityPoints / totalCredits);
 		averageDesiredGpa = ((qualityPoints + desiredQualityPoints) / (potentialCredits));
 		averagePredictedGpa = ((qualityPoints + desiredQualityPoints + predictedQualityPoints) / (predictedCredits));
 		
-		
+			
 		System.out.println("Credits earned: " + totalCredits);
 		System.out.println("Potential credits earned after semester ends: " + potentialCredits);
 		System.out.println("Total number of planned credits " + predictedCredits);
@@ -116,5 +120,11 @@ public class CourseGeneralInfoClient {
 		System.out.println("Desired GPA after semester ends: " + df.format(averageDesiredGpa));
 		System.out.println("Potential GPA based on future courses: " + df.format(averagePredictedGpa));
 		
-		}
+	}
 }
+		
+		
+	
+
+
+
